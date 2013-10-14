@@ -23,10 +23,10 @@
 		</div>
 	-->
 		<ul class="meta">
-			<li class="noborder"><!-- Post Date-->Posted on :<span class="date"><?php echo get_the_date();?></span> in <?php the_category(' , ') ?></li>
+			<li class="noborder"><!-- Post Date-->Enviado em :<span class="date"><?php echo get_the_date();?></span> em <?php the_category(' , ') ?></li>
 			<!-- Post Comments-->
-			<li class="comment"><?php comments_popup_link('No comments', '1 comment', '% comments', ''); ?></li>
-			<?php edit_post_link('Edit this','<!-- Post Edit--><li class="edit">','</li>'); ?> 
+			<li class="comment"><?php comments_popup_link('sem coment&aacute;rio', '1 coment&aacute;rio', '% coment&aacute;rios', ''); ?></li>
+			<?php edit_post_link('Editar','<!-- Post Edit--><li class="edit">','</li>'); ?> 
 		</ul>
 			
 		<div class="cont"><?php the_content(); ?></div>

@@ -22,7 +22,7 @@
 	}
 	// Show the comments
 	if ( have_comments() ) : ?>
-	<legend> <?php comments_number(__('0 Comments','Clean'),  __('1 Comment','Clean'), '% '.__('Comments','Clean').'');?></legend>
+	<legend> <?php comments_number(__('0 Coment&aacute;rio','Clean'),  __('1 Coment&aacute;rio','Clean'), '% '.__('Coment&aacute;rios','Clean').'');?></legend>
 	<ol class="commentlist">
 	  <?php wp_list_comments('type=comment&callback=mytheme_comment'); ?>
 	</ol>
@@ -75,16 +75,16 @@
 	<div  id="respond">
 	 <?php if ( $user_ID ) : ?>
 	  <p class="alignright">
-		<?php _e('Logged in as','Clean'); ?>
+		<?php _e('Logado como','Clean'); ?>
 		<a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a> &bull; <a href=" <?php echo wp_logout_url($redirect); ?>">
-		<?php _e('Log out','Clean'); ?>
+		<?php _e('Sair','Clean'); ?>
 		&raquo;</a></p>
 	  <?php endif; ?>
 	
 	
 	<span id="cancel-comment-reply" class="alignright"> <?php cancel_comment_reply_link(__('Click here to cancel reply.','Clean').('') ); ?> </span>
 
-	<h3 ><?php _e('Leave a Response','Clean'); ?></h3>
+	<h3 ><?php _e('Insira um Coment&aacute;rio','Clean'); ?></h3>
 	<?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 		<p>
 	  <?php _e('You must be','Clean'); ?>
@@ -118,12 +118,12 @@
 	  <?php comment_id_fields(); ?>
 	  </td></tr>
 			<td >
-			<span><?php if ($req) echo "*"; ?></span><label for="comment">Your Comment</label>
-			<textarea name="comment" id="comment" cols="10" rows="10" tabindex="4" placeholder="Type your comment here"></textarea>
+			<span><?php if ($req) echo "*"; ?></span><label for="comment">Seu Coment&aacute;rio</label>
+			<textarea name="comment" id="comment" cols="10" rows="10" tabindex="4" placeholder="Escreva seu coment&aacute;rio aqui"></textarea>
 			<input type="hidden" name="redirect_to" value="<?php echo htmlspecialchars($_SERVER["REQUEST_URI"]); ?>" />
-			<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Submit Comment','Clean'); ?>" />
-			<input name="Reset" type="Reset" id="submit" tabindex="5" value="Clear"  class="button"/>
-				<span>*</span> Required , <span>**</span> will not be published.
+			<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Enviar Coment&aacute;rio','Clean'); ?>" />
+			<input name="Reset" type="Reset" id="submit" tabindex="5" value="Limpar"  class="button"/>
+				<span>*</span> Obrigat&oacute;rio , <span>**</span> não será publicado.
 					</td>
 				</tr>
 			</table>

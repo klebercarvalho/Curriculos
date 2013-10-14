@@ -16,13 +16,13 @@
 <small>
 	<p>
 		<a href="<?php bloginfo('url'); ?>" title="<?php _e(get_bloginfo('name'), 'personal'); ?>"><?php _e(get_bloginfo('name'), 'personal'); ?></a>
-		<?php _e('is powered by', 'theme'); ?>
-		<a href="http://www.rebelk.com.br" title="Powered by Rebelk Gestão de Conteúdo <?php bloginfo('version'); ?>, state-of-the-art semantic personal publishing platform">Rebelk Gestão de Conteúdo <?php bloginfo('version'); ?></a>
-		<?php _e(' and delivered to you in ');
+		<?php _e('&eacute; produzido por', 'theme'); ?>
+		<a href="http://www.rebelk.com.br" title="Rebelk Curr&iacute;culos <?php bloginfo('version') ?>,">Rebelk Curr&iacute;culos <?php bloginfo('version') ?></a>
+		<?php _e(' e entregue para voc&ecirc; em ');
 			timer_stop(1);
-			_e(' seconds using ');
+			_e(' segundos usando ');
 			echo $wpdb -> num_queries;
-			_e(' queries.');
+			_e(' consultas.');
 		?>	
 </small>
 <br />

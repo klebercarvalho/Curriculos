@@ -27,7 +27,7 @@
 		endif;
 		echo $curauth->display_name; ?>'s  Archives  <?php echo get_the_author() ;?>
 	<?php elseif (isset($_GET['paged']) && !empty($_GET['paged'])): ?>Blog Archives
-	<?php else : ?>Welcome to <?php bloginfo('name');?>
+	<?php else : ?>Bem-vindo ao <?php bloginfo('name');?>
 	<?php endif; ?>
 	</h1>
 	<!-- end Title -->
@@ -36,7 +36,7 @@
 	<?php while (have_posts()) : the_post(); ?>
 		<li <?php if (function_exists('post_class')) { post_class(); } else { echo 'class="post"'; } ?> id="post-<?php the_ID(); ?>">
 			<h2 class="content_header">	<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><?php the_title() ?></a></h2>
-			<div class="link"><?php the_permalink() ?> - <?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?><?php edit_post_link('Edit',' - ',''); ?></div>
+			<div class="link"><?php the_permalink() ?> - <?php comments_popup_link('0 Coment&aacute;rios', '1 Coment&aacute;rio', '% Coment&aacute;rio'); ?><?php edit_post_link('Edit',' - ',''); ?></div>
 			<div class="excerpt"><span class="date alignleft"><?php the_time('d M Y ');?> <b> ...  &nbsp;</b></span><?php the_excerpt(); ?></div>
 			<div class="clearall"></div>
 			
@@ -47,15 +47,15 @@
 
 	<?php else : ?>
 	<div class="post">
-	<h1>No standard web pages were found.</h1>
+	<h1>N&atilde;o foi encontrado nenhum curr&iacute;culo.</h1>
 	<br />
 	<div class="cont">
-	<p>Suggestions:</p>
+	<p>Sugest&atilde;o:</p>
 		<ul>
-			<li> Make sure all words are spelled correctly.</li>
-			<li> Try different keywords.</li>
-			<li> Try more general keywords.</li>
-			<li> Try fewer keywords.</li>
+			<li> Certifique-se de que todas as palavras est&atilde;o escritas corretamente.</li>
+			<li> Tente palavras-chave diferentes.</li>
+			<li> Tente palavras-chave mais gerais.</li>
+			<li> Tente com menos palavras-chave.</li>
 			</ul>
 		</div>
 	</div>

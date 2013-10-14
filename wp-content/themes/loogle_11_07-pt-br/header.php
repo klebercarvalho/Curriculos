@@ -50,9 +50,9 @@
 			<ul class="alignright">
 				<?php	global $user_identity, $user_level;
 			if (is_user_logged_in()) { ?>
-					<li><a href="<?php bloginfo('url'); ?>/wp-admin">Settings</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/wp-admin">Configurar</a></li>
 					<?php if ( $user_level >= 1 ) { ?>
-					<li><a href="<?php bloginfo('url') ?>/wp-admin/post-new.php">Write New</a><?php } ?></li>
+					<li><a href="<?php bloginfo('url') ?>/wp-admin/post-new.php">Novo Curr&iacute;culo</a><?php } ?></li>
 					<li ><a href="<?php echo wp_logout_url() ?>&amp;redirect_to=<?php echo urlencode($_SERVER['REQUEST_URI']) ?>" title="<?php _e('Log Out') ?>"><?php _e('Log Out'); ?></a></li>
 			<?php 	} 	else {?>
 				<li><a href="<?php echo bloginfo("url"); ?>/wp-login.php"><b><?php _e('Sign In')?></b></a></li>
@@ -89,7 +89,7 @@
 				<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
 					 <table cellpadding="0" cellspacing="0"   align="left">
 						<tr>
-							<td class="box"><input type="text" class="textbox searchbox"  name="s" id="s" placeholder="Search" size="41"/>
+							<td class="box"><input type="text" class="textbox searchbox"  name="s" id="s" placeholder="Pesquisar" size="41"/>
 							</td> 
 							<td ><input type="submit" id="searchsubmit" value="&nbsp;" class="button searchbutton" /></td>
 						</tr>
