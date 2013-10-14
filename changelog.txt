@@ -4,7 +4,10 @@
     * Code
     * wp-content/themes/loogle_11_07/functions.php
     * function remove_wp_logo()
-    * function remove_footer_admin() {
+    * function remove_footer_admin()
+    * function hide_help()
+    * function remove_screen_options_tab()
+    * function remove_collapse_menu() 
     
     * Code
     * wp-content/themes/loogle_11_07/footer.php
@@ -16,12 +19,15 @@
     
     * Plugin
     * Absolute Privacy
+    * Adminimize
+    * Bootstrap Admin
     * Customize Admin
     	* Plugins - Selecting this option removes the plugins dashboard widget.
     	* WordPress Site News - Selecting this option removes the WordPress Site News dashboard widget.
     	* WordPress Other News - Selecting this option removes the Other WordPress News dashboard widget.
     * Disable WordPress Core Updates
-    * Print Friendly and PDF
+    * User Submitted Posts
+    * Print Friendly and PDF (inactive)
     
     * Theme
     * Loogle 

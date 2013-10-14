@@ -229,7 +229,7 @@
 	}
 	add_filter('comment_class','comment_add_microid');
 	
- /*
+ 		/*
 		 * Remove the WordPress Logo from the WordPress Admin Bar
 		 * Author: Kleber Carvalho
 		 * URI: http://technerdia.com/1140_wordpress-admin-bar.html
