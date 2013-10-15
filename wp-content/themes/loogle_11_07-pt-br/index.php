@@ -18,7 +18,7 @@
 	<?php elseif (is_month()): ?>Archive for "<?php the_time('F, Y'); ?>"
 	<?php elseif (is_year()): ?>Archive for "<?php the_time('Y'); ?>"
 	<?php elseif (is_tag()): ?>Archive for "<?php single_tag_title(); ?> "
-	<?php elseif (is_search()): ?>Search Results for &ldquo;<?php the_search_query(); ?>&rdquo;
+	<?php elseif (is_search()): ?>Resultados da pesquisa por &ldquo;<?php the_search_query(); ?>&rdquo;
 	<?php elseif (is_author()): 
 		if(get_query_var('author_name')) :
 		$curauth = get_userdatabylogin(get_query_var('author_name'));
@@ -26,7 +26,7 @@
 		$curauth = get_userdata(get_query_var('author'));
 		endif;
 		echo $curauth->display_name; ?>'s  Archives  <?php echo get_the_author() ;?>
-	<?php elseif (isset($_GET['paged']) && !empty($_GET['paged'])): ?>Blog Archives
+	<?php elseif (isset($_GET['paged']) && !empty($_GET['paged'])): ?>Arquivos de Curr&iacute;culos
 	<?php else : ?>Bem-vindo ao <?php bloginfo('name');?>
 	<?php endif; ?>
 	</h1>
