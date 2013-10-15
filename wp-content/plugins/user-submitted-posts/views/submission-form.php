@@ -41,7 +41,7 @@ if (isset($authorName)) {
 		</fieldset>
 		<?php } if ($usp_options['usp_title'] == 'show') { ?>
 		<fieldset class="usp-title">
-			<label for="user-submitted-title"><?php _e('Post Title', 'usp'); ?></label>
+			<label for="user-submitted-title"><?php _e('Nome', 'usp'); ?></label>
 			<input name="user-submitted-title" type="text" value="" data-required="true" placeholder="<?php _e('Post Title', 'usp'); ?>" class="usp-input">
 		</fieldset>
 		<?php } if ($usp_options['usp_tags'] == 'show') { ?>
@@ -56,7 +56,8 @@ if (isset($authorName)) {
 		</fieldset>
 		<?php } if (($usp_options['usp_category'] == 'show') && ($usp_options['usp_use_cat'] == false)) { ?>
 		<fieldset class="usp-category">
-			<label for="user-submitted-category"><?php _e('Post Category', 'usp'); ?></label>
+			<!--<label for="user-submitted-category"><?php _e('Post Category', 'usp'); ?></label>-->
+			<label for="user-submitted-category"><?php _e('Categoria', 'usp'); ?></label>
 			<select name="user-submitted-category">
 				<?php foreach($usp_options['categories'] as $categoryId) { $category = get_category($categoryId); if(!$category) { continue; } ?>
 				<option value="<?php echo $categoryId; ?>"><?php $category = get_category($categoryId); echo htmlentities($category->name, ENT_QUOTES, 'UTF-8'); ?></option>
@@ -70,8 +71,10 @@ if (isset($authorName)) {
 				<?php wp_editor('', 'uspContent', array('textarea_rows'=>'10','textarea_name'=>'user-submitted-content','editor_class'=>'usp-rich-textarea')); ?>
 			</div>
 			<?php } else { ?>
-				<label for="user-submitted-content"><?php _e('Post Content', 'usp'); ?></label>
-				<textarea name="user-submitted-content" rows="5" data-required="true" placeholder="<?php _e('Post Content', 'usp'); ?>" class="usp-textarea"></textarea>
+				<!--<label for="user-submitted-content"><?php _e('Post Content', 'usp'); ?></label>-->
+				<label for="user-submitted-content"><?php _e('Curr&iacute;culo', 'usp'); ?></label>
+				<!--<textarea name="user-submitted-content" rows="5" data-required="true" placeholder="<?php _e('Post Content', 'usp'); ?>" class="usp-textarea"></textarea>-->
+				<textarea name="user-submitted-content" rows="5" data-required="true" placeholder="<?php _e('Seu curr&iacute;culo aqui...', 'usp'); ?>" class="usp-textarea"></textarea>
 			<?php } ?>
 		</fieldset>
 		<?php } if ($usp_options['usp_images'] == 'show') { ?>
@@ -111,7 +114,8 @@ if (isset($authorName)) {
 			<?php if ($usp_options['usp_use_cat'] == true) { ?>
 			<input class="hidden" type="hidden" name="user-submitted-category" value="<?php echo $usp_options['usp_use_cat_id']; ?>">
 			<?php } ?>
-			<input name="user-submitted-post" id="user-submitted-post" type="submit" value="<?php _e('Submit Post', 'usp'); ?>">
+			<!--<input name="user-submitted-post" id="user-submitted-post" type="submit" value="<?php _e('Submit Post', 'usp'); ?>">-->
+			<input name="user-submitted-post" id="user-submitted-post" type="submit" value="<?php _e('Enviar Curr&iacute;culo', 'usp'); ?>">
 		</div>
 
 		<?php } ?>

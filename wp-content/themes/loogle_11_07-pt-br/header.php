@@ -55,7 +55,8 @@
 					<li><a href="<?php bloginfo('url') ?>/wp-admin/post-new.php">Novo Curr&iacute;culo</a><?php } ?></li>
 					<li ><a href="<?php echo wp_logout_url() ?>&amp;redirect_to=<?php echo urlencode($_SERVER['REQUEST_URI']) ?>" title="<?php _e('Log Out') ?>"><?php _e('Log Out'); ?></a></li>
 			<?php 	} 	else {?>
-				<li><a href="<?php echo bloginfo("url"); ?>/wp-login.php"><b><?php _e('Sign In')?></b></a></li>
+				<!--<li><a href="<?php echo bloginfo("url"); ?>/wp-login.php"><b><?php _e('Sign In')?></b></a></li>-->
+				<li><a href="<?php echo bloginfo("url"); ?>/wp-login.php"><b><?php _e('Entrar')?></b></a></li>
 				<?php if (get_option('users_can_register')) { ?>
 				<li ><a href="<?php echo site_url('wp-login.php?action=register', 'login') ?>"><b><?php _e('Register') ?></b></a></li>
 				<?php 	}	} 	?> 
