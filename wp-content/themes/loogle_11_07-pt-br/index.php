@@ -36,7 +36,7 @@
 	<?php while (have_posts()) : the_post(); ?>
 		<li <?php if (function_exists('post_class')) { post_class(); } else { echo 'class="post"'; } ?> id="post-<?php the_ID(); ?>">
 			<h2 class="content_header">	<a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><?php the_title() ?></a></h2>
-			<div class="link"><?php the_permalink() ?> - <?php comments_popup_link('0 Coment&aacute;rios', '1 Coment&aacute;rio', '% Coment&aacute;rio'); ?><?php edit_post_link('Edit',' - ',''); ?></div>
+			<div class="link"><?php the_permalink() ?> - <?php comments_popup_link('0 Coment&aacute;rios', '1 Coment&aacute;rio', '% Coment&aacute;rio'); ?><?php edit_post_link('Editar',' - ',''); ?></div>
 			<div class="excerpt"><span class="date alignleft"><?php the_time('d M Y ');?> <b> ...  &nbsp;</b></span><?php the_excerpt(); ?></div>
 			<div class="clearall"></div>
 			

@@ -470,7 +470,7 @@ function usp_add_defaults() {
 			'usp_casing' => 0,
 			'usp_captcha' => 'show',
 			'usp_content' => 'show',
-			'success-message' => 'Success! Thank you for your submission.',
+			'success-message' => 'Curr&iacute;culo enviado com sucesso! Muito obrigado.',
 			'usp_form_version' => 'current',
 			'usp_email_alerts' => 1,
 			'usp_email_address' => $admin_mail,
