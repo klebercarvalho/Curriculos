@@ -7,7 +7,8 @@
 	Author URI: http://lineshjose.com
 	Tags: light, white,Three-columns,  flexible-width, right-sidebar, left-sidebar,  threaded-comments, translation-ready, white,  widgets
 */?>
-<?php get_header() ?>
+<?php # get_header() ?>
+<?php include (TEMPLATEPATH . '/header-page.php'); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div <?php if (function_exists('post_class')) { post_class("post"); } else { echo 'class="post"'; } ?> id="post-<?php the_ID(); ?>">
 	<h1><?php the_title() ?></h1>
