@@ -46,8 +46,14 @@ if (isset($authorName)) {
 		</fieldset>
 		<?php } if ($usp_options['usp_tags'] == 'show') { ?>
 		<fieldset class="usp-tags">
+			<?php if (isset($_GET['vaga']) && !empty($_GET['vaga'])) { ?>
+			<?php $vaga = stripslashes($_GET['vaga']); ?>
+			<label for="user-submitted-tags">Vaga:</label>
+			<input name="user-submitted-tags" id="user-submitted-tags" data-required="true" type="text" value="<?php echo $vaga; ?>" placeholder="<?php _e('Post Tags', 'usp'); ?>" class="usp-input">
+			<?php } else { ?>
 			<label for="user-submitted-tags"><?php _e('Post Tags', 'usp'); ?></label>
 			<input name="user-submitted-tags" id="user-submitted-tags" data-required="true" type="text" value="" placeholder="<?php _e('Post Tags', 'usp'); ?>" class="usp-input">
+			<?php } ?>
 		</fieldset>
 		<?php } if ($usp_options['usp_captcha'] == 'show') { ?>
 		<fieldset class="usp-captcha">
