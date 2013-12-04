@@ -109,6 +109,7 @@
 		<tr>
 			<!-- Left sidebar starts here -->
 			<td class="side_bar left_bar">
+				<!--
 				<div class="widget connection">
 				<ul>
 						<li><a href="http://facebook.com/<?php echo get_option('loogle_facebook');?>" class="facebook" title="Facebook">Facebook</a></li>
@@ -117,6 +118,7 @@
 						<li><a href="<?php bloginfo_rss( 'rss2_url' ); ?>"  class="rss" title="Syndicate this site using RSS 2.0">RSS Subscribe</a></li>
 					</ul>
 				</div>
+				-->
 			
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Leftbar') ) : ?>
 				<div class="widget">

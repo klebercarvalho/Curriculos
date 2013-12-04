@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 			return true;
 		} else {
 			$('.usp-input-error-captcha').remove();
-			$('.usp-captcha').append('<div class="usp-input-error usp-input-error-captcha"><span>Incorrect response. Please try again.</span></div>');
+			$('.usp-captcha').append('<div class="usp-input-error usp-input-error-captcha"><span>Resposta incorreta. Tente novamente, por favor.</span></div>');
 			return false;
 		}
 	});
